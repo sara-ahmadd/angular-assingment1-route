@@ -1,0 +1,20 @@
+<div class="head-container">
+  <p class="title fw-bolder">{{ titleText }}</p>
+  <div class="special-border">
+    <span
+      [ngClass]="{
+        'home-border': page == 'home' || page == 'about',
+        'normal-border': page !== 'home' && page !== 'about'
+      }"
+    ></span>
+    <span>
+      <i class="fa fa-star" aria-hidden="true"></i>
+    </span>
+    <span
+      [ngClass]="{
+        'home-border': page == 'home' || page == 'about',
+        'normal-border': page !== 'home' && page !== 'about'
+      }"
+    ></span>
+  </div>
+</div>

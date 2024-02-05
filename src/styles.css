@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600&display=swap");
+:root {
+  --main-color: #1abc9c;
+  --sec-color: #2c3e50;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* body {
+  font-family: Kanit, "Helvetica Neue", Helvetica, sans-serif;
+} */
+.main-color {
+  color: var(--main-color);
+}
+.sec-color {
+  color: var(--sec-color);
+}
+.bg-main-color {
+  background: var(--main-color);
+}
+.bg-sec-color {
+  background: var(--sec-color);
+}
+.section-height {
+  min-height: 85vh;
+}
+.bg-dark-gray {
+  background: #1a252f;
+}
