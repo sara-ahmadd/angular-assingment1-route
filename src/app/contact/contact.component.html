@@ -1,1 +1,78 @@
-<app-section-heading [titleText]="contactTitle"></app-section-heading>
+<div class="container section-height">
+  <div class="row justify-content-center align-items-center gap-5">
+    <app-section-heading [titleText]="contactTitle"></app-section-heading>
+    <form class="col-lg-7 col-md-8 py-4 main-color">
+      <div class="mb-3 position-relative">
+        <label
+          for="userName"
+          [class]="user.userName.length > 0 ? 'h-25 form-label' : 'd-none'"
+          >userName :
+        </label>
+        <input
+          type="text"
+          placeholder="userName"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          id="userName"
+          aria-describedby="emailHelp"
+          name="userInfo"
+          [(ngModel)]="user.userName"
+        />
+      </div>
+      <div class="mb-3">
+        <label
+          for="userAge"
+          [class]="user.userAge > 0 ? 'h-25 form-label' : 'd-none'"
+          >userAge :
+        </label>
+        <input
+          type="number"
+          placeholder="userAge"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          id="userAge"
+          aria-describedby="emailHelp"
+          name="userInfo"
+          [(ngModel)]="user.userAge"
+        />
+      </div>
+      <div class="mb-3">
+        <label
+          for="userEmail"
+          [class]="user.userEmail.length > 0 ? 'h-25 form-label' : 'd-none'"
+          >userEmail :
+        </label>
+        <input
+          type="email"
+          placeholder="userEmail"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          id="userEmail"
+          aria-describedby="emailHelp"
+          name="userInfo"
+          [(ngModel)]="user.userEmail"
+        />
+      </div>
+      <div class="mb-3">
+        <label
+          for="userPassword"
+          [class]="user.userPassword.length > 0 ? 'h-25 form-label' : 'd-none'"
+          >userPassword :
+        </label>
+        <input
+          type="password"
+          placeholder="userPassword"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          id="userPassword"
+          name="userInfo"
+          [(ngModel)]="user.userPassword"
+        />
+      </div>
+
+      <button
+        type="submit"
+        class="border-0 p-2 rounded-3 text-white bg-main-color"
+        (click)="printInConsole()"
+      >
+        Send Message
+      </button>
+    </form>
+  </div>
+</div>

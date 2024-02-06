@@ -14,8 +14,8 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    // title: 'home', //error appears saying that title doesnot exist on type Route
     component: HomeComponent,
+    // title: 'home',
   },
   {
     path: 'contact',
