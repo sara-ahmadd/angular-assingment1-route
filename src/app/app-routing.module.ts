@@ -15,23 +15,27 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    // title: 'home',
+    title: 'home',
   },
   {
     path: 'contact',
     component: ContactComponent,
+    title: 'contact',
   },
   {
     path: 'about',
     component: AboutComponent,
+    title: 'about',
   },
   {
     path: 'portfolio',
     component: PortfolioComponent,
+    title: 'portfolio',
   },
   {
     path: '**',
     component: NotFoundComponent,
+    title: 'notFoundPage',
   },
 ];
 
