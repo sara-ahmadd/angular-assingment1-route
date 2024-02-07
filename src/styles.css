@@ -9,9 +9,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-/* body {
+body {
   font-family: Kanit, "Helvetica Neue", Helvetica, sans-serif;
-} */
+}
 .main-color {
   color: var(--main-color);
 }

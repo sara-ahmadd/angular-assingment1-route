@@ -13,7 +13,6 @@
   font-size: 80px;
   font-weight: bold;
   background: var(--main-color);
-  z-index: 20;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,16 +31,14 @@
   opacity: 0.9;
 }
 #modal-container {
-  position: fixed;
-  width: 100%;
-  height: 100%;
+  /* position: fixed; */
+  width: 100vw;
+  height: 100vh;
   left: 0;
   top: 0;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(137, 137, 237, 0.5);
   z-index: 30;
-  display: none;
 }

@@ -1,7 +1,23 @@
 .nav-height {
-  height: fit-content;
-  padding: 20px 0;
+  height: 60px;
+  transition: all 0.4s linear;
+  z-index: 20;
+  top: 20px;
+  padding: 10px;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
 }
-.gap {
-  gap: 20px;
+
+.nav-parent {
+  height: 100px;
+
+  top: -30px;
+  transition: all 0.4s linear;
+  z-index: 20;
+  -webkit-transition: all 0.4s linear;
+  -moz-transition: all 0.4s linear;
+  -ms-transition: all 0.4s linear;
+  -o-transition: all 0.4s linear;
 }

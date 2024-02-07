@@ -7,12 +7,7 @@
           src="./assets/images/port1.png"
           class="rounded-3 w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port1.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port1.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -22,12 +17,7 @@
           src="./assets/images/port2.png"
           class="rounded-3 mx-auto w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port2.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port2.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -37,12 +27,7 @@
           src="./assets/images/port3.png"
           class="rounded-3 mx-auto w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port3.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port3.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -52,12 +37,7 @@
           src="./assets/images/port1.png"
           class="rounded-3 mx-auto w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port1.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port1.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -67,12 +47,7 @@
           src="./assets/images/port2.png"
           class="rounded-3 mx-auto w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port2.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port2.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -82,12 +57,7 @@
           src="./assets/images/port3.png"
           class="rounded-3 w-100 h-100 mx-auto"
         />
-        <div
-          class="overlay"
-          (click)="openModal('./assets/images/port3.png')"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
+        <div class="overlay" (click)="openModal('./assets/images/port3.png')">
           <i class="fa fa-plus"></i>
         </div>
       </div>
@@ -96,31 +66,13 @@
 </div>
 
 <div
-  class="modal fade"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-hidden="true"
+  [class]="display ? ' position-fixed  bg-primary bg-opacity-25' : 'd-none'"
+  id="modal-container"
+  (click)="closeModal()"
 >
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">
-        <img [src]="imageSource" />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-          Close
-        </button>
-      </div>
-    </div>
+  <div
+    class="container top-0 start-0 d-flex justify-content-center align-items-center"
+  >
+    <img [src]="imageSource" class="img-fluid" />
   </div>
 </div>

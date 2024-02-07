@@ -1,5 +1,4 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
-// import { Title } from '@angular/platform-browser';
+import { Component } from '@angular/core';
 import { User } from '../user';
 
 @Component({
@@ -11,13 +10,10 @@ export class ContactComponent {
   contactTitle = 'CONATCT SECTION';
   user: User = {
     userName: '',
-    userAge: 0,
+    userAge: null,
     userEmail: '',
     userPassword: '',
   };
-  // constructor(private _titleService: Title) {
-  //   _titleService.setTitle('contact');
-  // }
 
   printInConsole() {
     console.log(this.user);

@@ -2,66 +2,82 @@
   <div class="row justify-content-center align-items-center gap-5">
     <app-section-heading [titleText]="contactTitle"></app-section-heading>
     <form class="col-lg-7 col-md-8 py-4 main-color">
-      <div class="mb-3 position-relative">
+      <div class="mb-3">
         <label
           for="userName"
-          [class]="user.userName.length > 0 ? 'h-25 form-label' : 'd-none'"
+          [class]="
+            user.userName.length > 0
+              ? 'position-relative top-0 transition '
+              : 'position-relative down transition'
+          "
           >userName :
         </label>
         <input
           type="text"
           placeholder="userName"
-          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none bg-white position-relative position-relative"
           id="userName"
           aria-describedby="emailHelp"
-          name="userInfo"
+          name="userName"
           [(ngModel)]="user.userName"
         />
       </div>
       <div class="mb-3">
         <label
           for="userAge"
-          [class]="user.userAge > 0 ? 'h-25 form-label' : 'd-none'"
+          [class]="
+            user.userAge && user.userAge > 0
+              ? 'position-relative top-0 transition '
+              : 'position-relative down transition'
+          "
           >userAge :
         </label>
         <input
           type="number"
           placeholder="userAge"
-          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none bg-white position-relative"
           id="userAge"
           aria-describedby="emailHelp"
-          name="userInfo"
+          name="userAge"
           [(ngModel)]="user.userAge"
         />
       </div>
       <div class="mb-3">
         <label
           for="userEmail"
-          [class]="user.userEmail.length > 0 ? 'h-25 form-label' : 'd-none'"
+          [class]="
+            user.userEmail.length > 0
+              ? 'position-relative top-0 transition '
+              : 'position-relative down transition'
+          "
           >userEmail :
         </label>
         <input
           type="email"
           placeholder="userEmail"
-          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none bg-white position-relative"
           id="userEmail"
           aria-describedby="emailHelp"
-          name="userInfo"
+          name="userEmail"
           [(ngModel)]="user.userEmail"
         />
       </div>
       <div class="mb-3">
         <label
           for="userPassword"
-          [class]="user.userPassword.length > 0 ? 'h-25 form-label' : 'd-none'"
+          [class]="
+            user.userPassword.length > 0
+              ? 'position-relative top-0 transition '
+              : 'position-relative down transition'
+          "
           >userPassword :
         </label>
         <input
           type="password"
           placeholder="userPassword"
-          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none"
+          class="form-control px-2 py-3 border-0 border-bottom border-2 shadow-none bg-white position-relative"
           id="userPassword"
-          name="userInfo"
+          name="userPassword"
           [(ngModel)]="user.userPassword"
         />
       </div>
