@@ -9,7 +9,13 @@
   -ms-transition: all 0.4s linear;
   -o-transition: all 0.4s linear;
 }
-
+.transition-5 {
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -ms-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
 .nav-parent {
   height: 100px;
 
